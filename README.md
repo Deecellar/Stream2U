@@ -24,6 +24,7 @@ La estructura de la aplicacion consiste varios elementos, un punto donde se reci
 ## Arquitectura
 
 ![Arquitectura][imagen-arc]
+<hr>
 La arqutectura esta formada por 3 partes:
 
 - Aplicaciones
