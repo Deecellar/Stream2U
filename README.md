@@ -6,8 +6,7 @@ La estructura de la aplicacion necesita varios elementos,  un punto donde se rec
 
 # Imagenes
 - Imagen de encoder
-- Imagen para el programa para guardar el stream
-- Imagen para el servicio de preview
+- Imagen para el programa para manejar el stream
 - Imagen para el servicio de transmision a puntos de video
 - Imagen de base de datos
 
@@ -20,9 +19,9 @@ La estructura de la aplicacion necesita varios elementos,  un punto donde se rec
 ## Elementos de software 
 - NGINX
 - MariaDB
-- Microservicio de Transmisicion
-- Microservicio de Encoding
-- Microservicio de guardado
+- Servicio de Transmisicion
+- Servicio de Encoding
+- Servicio de guardado
 - Servicio de uso de la app (lo que ven las personas)
 
 [imagen-arc]: https://github.com/Deecellar/Stream2U/raw/master/docAssets/Arq-Streaming.png "Imagen de la arquitectura"
