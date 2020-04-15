@@ -2,6 +2,8 @@
 
 La aplicacion es un servicio de streaming que tiene como objetivo permitirle a las personas stremear desde su pc y transmitirlo a las personas que quieran ver su stream, adicionalmente ofrecele una calidad cual le convenga a la persona para ver el stream de la otra persona.
 
+Opcionalmente que las personas puedan comentar sobre el contenido en tiempo real.
+
 ## Solucion
 
 La estructura de la aplicacion consiste varios elementos, un punto donde se recibe la transmision, un punto donde se guarda la transmision y otro donde se transmite el video, adicionalmente, las transmisiones deben ser procesadas en distintas calidades inferiores a la de la transmision original.
@@ -17,6 +19,7 @@ La estructura de la aplicacion consiste varios elementos, un punto donde se reci
 
 - DRM (Si se quiere establecer requerimientos de proteccion de stream)
 - CDN para velocidad de dar el servicio
+- Servidor de chat en tiempo real
 
 ## Arquitectura
 
@@ -41,6 +44,7 @@ Los canales son puntos de encoding y distribucion de manejo que se encarga de cr
 - UFW
 - Aplicacion Mobil (Nativescript)
 - Aplicacion Web (SvelteJS)
+- (Opcional) Servidor de chat (Asp.Net)
 
 ## Descripcion de elementos de software
 
@@ -71,6 +75,10 @@ El UWF estara configurado para no permitir en la maquina que tiene las imagenes 
 ### Aplicacion mobil y web
 
 Aplicaciones que deben consumir la API de los streaming endpoints para funcionar, hechos en svelte para mayor reuso de codigo
+
+### Servidor de chat
+
+Esto es un elemento opcional pero se podria agregar un servicio extra para mantener las conversaciones del chat y mantener a tiempo real el chat sobre un video/stream.
 
 ## Licencia
 
