@@ -16,6 +16,16 @@ La estructura de la aplicacion necesita varios elementos,  un punto donde se rec
 
 # Arquitectura
 ![Arquitectura][imagen-arc]
+La arqutectura esta formada por 3 partes
+- Aplicaciones
+- Canales
+- Clientes
+
+Las aplicacion de manejo es aquella que maneja los streams,y maneja de que esten estructurados, asociados, etc. La otra aplicacion, el endpoint de stream sirve para que se conecten los clientes de una region y puedan acceder a los canales de las personas o de ellos mismos
+
+Los canales son puntos de encoding y distribucion de manejo que se encarga de crear los streams, los guarda como videos y por ende existen como un elemento mas en el sistema, es la interaccion de un encoder con un app de manejo central.
+
+
 ## Elementos de software 
 - NGINX
 - MariaDB
