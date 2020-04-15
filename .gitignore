@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.gitignore.io/api/visualstudiocode,linux,aspnetcore,csharp,monodevelop,node,windows
-# Edit at https://www.gitignore.io/?templates=visualstudiocode,linux,aspnetcore,csharp,monodevelop,node,windows
+# Created by https://www.gitignore.io/api/windows,visualstudiocode,node,monodevelop,linux,csharp,aspnetcore,nativescript
+# Edit at https://www.gitignore.io/?templates=windows,visualstudiocode,node,monodevelop,linux,csharp,aspnetcore,nativescript
 
 ### ASPNETCore ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -500,6 +500,24 @@ MigrationBackup/
 *.resources
 test-results/
 
+### NativeScript ###
+/platforms
+/hooks
+/node_modules
+/lib
+/debugger
+/dist
+
+/app/**/*.map
+# shouldn't ignore this for vanilla nativescript
+# /app/**/*.js
+
+.DS_Store
+**/*.log
+tags
+
+ers.txt
+
 ### Node ###
 # Logs
 logs
@@ -641,7 +659,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/visualstudiocode,linux,aspnetcore,csharp,monodevelop,node,windows
+# End of https://www.gitignore.io/api/windows,visualstudiocode,node,monodevelop,linux,csharp,aspnetcore,nativescript
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
